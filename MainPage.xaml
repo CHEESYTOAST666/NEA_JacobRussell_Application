@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NEA_JacobRussell_Application.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="musicnote.JPEG"
+                SemanticProperties.Description="Simple logo placeholder"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Welcome to Harmonophonic"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="A musical trainer designed by musicians, for musicians"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome message"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="RhythmRedirect"
+                BackgroundColor="Black"
+                TextColor="White"
+                Text="Rhythm"
+                SemanticProperties.Hint="Redirects to Rhythm"
+                Clicked="BtnRhythm_Clicked"
+                HorizontalOptions="Center" />
+            <Button
+                x:Name="NotesRedirect"
+                BackgroundColor="Black"
+                TextColor="White"
+                Text="Notes"
+                SemanticProperties.Hint="Redirects to Notes"
+                Clicked="BtnNotes_Clicked"
+                HorizontalOptions="Center" />
+            <Button
+                x:Name="IntervalRedirect"
+                Text="Intervals"
+                BackgroundColor="Black"
+                TextColor="White"
+                SemanticProperties.Hint="Redirects to Intervals"
+                Clicked="BtnIntervals_Clicked"
+                HorizontalOptions="Center" />
+            <Button
+                x:Name="Logout"
+                Text="Log Out"
+                SemanticProperties.Hint="Log out of account"
+                Clicked="BtnLogout_Clicked"
+                HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

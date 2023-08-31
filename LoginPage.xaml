@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NEA_JacobRussell_Application.LoginPage"
+             Title="Login Page">
+    <VerticalStackLayout Spacing="25" Padding="30,0" VerticalOptions="Center">
+        <VerticalStackLayout Spacing="5">
+            <Label Text="Please Enter your Username and Password" HorizontalTextAlignment="Center" TextColor="#191919"/>
+        </VerticalStackLayout>
+        <Button Text="Login" Clicked="BtnLoginClicked" x:Name="LoginQuery" SemanticProperties.Hint="Login" Command="{Binding LoginCommand}"/>
+    </VerticalStackLayout>
+</ContentPage>
